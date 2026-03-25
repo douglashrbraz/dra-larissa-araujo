@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dra. Larissa Araújo | Estética Avançada</title>
+  <title>Dra. Larissa Araujo | Estética Avançada</title>
 
   <!-- Playfair Display (título) + Open Sans (botões/corpo) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -101,13 +101,15 @@
     }
 
     .hero-name .subtitle {
-      font-family: 'Open Sans', sans-serif;
-      font-size: clamp(0.6rem, 2.4vw, 0.7rem);
-      font-weight: 300;
-      letter-spacing: 0.32em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-top: 6px;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(0.75rem, 3vw, 0.9rem);
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.03em;
+      color: var(--brown-dark);
+      text-shadow: 0 1px 10px rgba(247, 241, 232, 0.8);
+      margin-top: 8px;
+      line-height: 1.5;
     }
 
     /* ─── DIVIDER ─────────────────────────────────── */
@@ -214,47 +216,56 @@
     .links-services .btn:nth-child(2) { animation: fadeUp 0.5s ease 0.18s both; }
     .links-services .btn:nth-child(3) { animation: fadeUp 0.5s ease 0.28s both; }
     .links-services .btn:nth-child(4) { animation: fadeUp 0.5s ease 0.38s both; }
+    .links-services .btn:nth-child(5) { animation: fadeUp 0.5s ease 0.48s both; }
 
     /* links */
-    .links-extra .btn:nth-child(1) { animation: fadeUp 0.5s ease 0.50s both; }
-    .links-extra .btn:nth-child(2) { animation: fadeUp 0.5s ease 0.60s both; }
+    .links-extra .btn:nth-child(1) { animation: fadeUp 0.5s ease 0.60s both; }
 
     /* ─── VARIANTES DE SERVIÇO ───────────────────── */
 
-    /* Botox — borda levemente rosada/quente */
-    .btn-botox {
+    /* Harmonização Facial — rosé dourado */
+    .btn-harmonizacao {
       border-color: #C9A882;
       background: linear-gradient(135deg, var(--white) 0%, #FBF6EE 100%);
     }
-    .btn-botox::before {
+    .btn-harmonizacao::before {
       background: linear-gradient(120deg, #8C6840 0%, #BF9060 40%, #D4AA78 70%, #EAD0A0 100%);
     }
 
-    /* Bioestimulador — tom rosé dourado */
-    .btn-bio {
-      border-color: #C4A490;
-      background: linear-gradient(135deg, var(--white) 0%, #FAF3EE 100%);
-    }
-    .btn-bio::before {
-      background: linear-gradient(120deg, #7A5040 0%, #A87060 40%, #C49080 70%, #E0BBA8 100%);
-    }
-
-    /* Limpeza de Pele — verde-sálvia neutro */
-    .btn-limpeza {
+    /* Tratamentos de Pele — verde-sálvia */
+    .btn-pele {
       border-color: #A8B89A;
       background: linear-gradient(135deg, var(--white) 0%, #F4F8F2 100%);
     }
-    .btn-limpeza::before {
+    .btn-pele::before {
       background: linear-gradient(120deg, #4A6040 0%, #708860 40%, #92A878 70%, #C0D0B0 100%);
     }
 
-    /* Drenagem — azul-petróleo discreto */
-    .btn-drenagem {
-      border-color: #8AAAB8;
-      background: linear-gradient(135deg, var(--white) 0%, #F0F5F8 100%);
+    /* Estética Corporal — terracota quente */
+    .btn-corporal {
+      border-color: #C4A490;
+      background: linear-gradient(135deg, var(--white) 0%, #FAF3EE 100%);
     }
-    .btn-drenagem::before {
-      background: linear-gradient(120deg, #304858 0%, #507088 40%, #6898A8 70%, #A0C0CC 100%);
+    .btn-corporal::before {
+      background: linear-gradient(120deg, #7A5040 0%, #A87060 40%, #C49080 70%, #E0BBA8 100%);
+    }
+
+    /* Terapias Capilares — marrom mogno */
+    .btn-capilar {
+      border-color: #B09070;
+      background: linear-gradient(135deg, var(--white) 0%, #F8F2EA 100%);
+    }
+    .btn-capilar::before {
+      background: linear-gradient(120deg, #6B4828 0%, #9A7050 40%, #B89068 70%, #D8B890 100%);
+    }
+
+    /* Skincare & Home Care — lavanda suave */
+    .btn-skincare {
+      border-color: #B8A8C8;
+      background: linear-gradient(135deg, var(--white) 0%, #F6F2FA 100%);
+    }
+    .btn-skincare::before {
+      background: linear-gradient(120deg, #5A4870 0%, #8870A0 40%, #A890C0 70%, #D0C0E0 100%);
     }
 
     /* ─── BOTÃO WHATSAPP ─────────────────────────── */
@@ -317,11 +328,11 @@
 
   <!-- ── FOTO HERO ─────────────────────────────── -->
   <div class="hero">
-    <img src="foto-larissa.jpg" alt="Dra. Larissa Araújo — Esteticista" />
+    <img src="foto-larissa.jpg" alt="Dra. Larissa Araujo — Esteticista" />
 
     <div class="hero-name">
-      <p class="title">Dra. Larissa Araújo</p>
-      <p class="subtitle">Estética &nbsp;·&nbsp; Beleza &nbsp;·&nbsp; Bem-estar</p>
+      <p class="title">Dra. Larissa Araujo</p>
+      <p class="subtitle">Cada pele é única.<br>Seu tratamento também deve ser.</p>
     </div>
   </div>
 
@@ -335,41 +346,60 @@
   <!-- ── SERVIÇOS ──────────────────────────────── -->
   <div class="links links-services">
 
-    <!-- BOTOX -->
-    <a href="https://wa.me/5519998883900?text=Olá%2C%20Dra.%20Larissa!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20a%20Toxina%20Botulínica.%20Pode%20me%20ajudar%3F"
-       class="btn btn-botox"
+    <!-- HARMONIZAÇÃO FACIAL -->
+    <a href="https://wa.me/5519998883900?text=Ol%C3%A1!%20Tenho%20interesse%20em%20harmoniza%C3%A7%C3%A3o%20facial%20e%20gostaria%20de%20saber%20quais%20procedimentos%20s%C3%A3o%20ideais%20para%20mim%20%F0%9F%92%89%E2%9C%A8"
+       class="btn btn-harmonizacao"
        target="_blank" rel="noopener noreferrer">
-      <span class="btn-label">Toxina Botulínica</span>
+      <span class="btn-label">Harmonização Facial</span>
     </a>
 
-    <!-- BIOESTIMULADOR -->
-    <a href="https://wa.me/5519998883900?text=Olá%2C%20Dra.%20Larissa!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20o%20Bioestimulador.%20Pode%20me%20ajudar%3F"
-       class="btn btn-bio"
+    <!-- TRATAMENTOS DE PELE -->
+    <a href="https://wa.me/5519998883900?text=Ol%C3%A1!%20Quero%20cuidar%20melhor%20da%20minha%20pele%20e%20gostaria%20de%20conhecer%20os%20tratamentos%20mais%20indicados%20para%20o%20meu%20caso%20%F0%9F%A4%8D"
+       class="btn btn-pele"
        target="_blank" rel="noopener noreferrer">
-      <span class="btn-label">Bioestimulador</span>
+      <span class="btn-label">Tratamentos de Pele</span>
     </a>
 
-    <!-- LIMPEZA DE PELE -->
-    <a href="https://wa.me/5519998883900?text=Olá%2C%20Dra.%20Larissa!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20a%20Limpeza%20de%20Pele.%20Pode%20me%20ajudar%3F"
-       class="btn btn-limpeza"
+    <!-- ESTÉTICA CORPORAL -->
+    <a href="https://wa.me/5519998883900?text=Ol%C3%A1!%20Tenho%20interesse%20em%20tratamentos%20corporais%20e%20gostaria%20de%20entender%20quais%20s%C3%A3o%20mais%20indicados%20para%20mim%20%E2%9C%A8"
+       class="btn btn-corporal"
        target="_blank" rel="noopener noreferrer">
-      <span class="btn-label">Limpeza de Pele</span>
+      <span class="btn-label">Estética Corporal</span>
     </a>
 
-    <!-- DRENAGEM LINFÁTICA -->
-    <a href="https://wa.me/5519998883900?text=Olá%2C%20Dra.%20Larissa!%20Tenho%20interesse%20em%20saber%20mais%20sobre%20a%20Drenagem%20Linfática.%20Pode%20me%20ajudar%3F"
-       class="btn btn-drenagem"
+    <!-- TERAPIAS CAPILARES -->
+    <a href="https://wa.me/5519998883900?text=Ol%C3%A1!%20Estou%20buscando%20tratamentos%20para%20fortalecimento%20e%20sa%C3%BAde%20capilar.%20Pode%20me%20orientar%3F%20%F0%9F%A4%8D"
+       class="btn btn-capilar"
        target="_blank" rel="noopener noreferrer">
-      <span class="btn-label">Drenagem Linfática</span>
+      <span class="btn-label">Terapias Capilares</span>
     </a>
 
+    <!-- SKINCARE & HOME CARE -->
+    <a href="https://wa.me/5519998883900?text=Ol%C3%A1!%20Gostaria%20de%20montar%20uma%20rotina%20de%20cuidados%20para%20minha%20pele%20com%20produtos%20indicados%20por%20voc%C3%AA%20%E2%9C%A8"
+       class="btn btn-skincare"
+       target="_blank" rel="noopener noreferrer">
+      <span class="btn-label">Skincare &amp; Home Care</span>
+    </a>
+
+  </div>
+
+  <!-- ── WHATSAPP ────────────────────────────────── -->
+  <div class="links links-extra" style="margin-top: 6px;">
+    <a href="https://wa.me/5519998883900?text=Ol%C3%A1%2C%20Dra.%20Larissa!%20Gostaria%20de%20agendar%20uma%20consulta."
+       class="btn btn-whatsapp"
+       target="_blank" rel="noopener noreferrer">
+      <svg class="btn-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:relative;z-index:1;width:17px;height:17px;fill:currentColor;flex-shrink:0;">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span class="btn-label">Agendar pelo WhatsApp</span>
+    </a>
   </div>
 
 
 
   <!-- ── FOOTER ─────────────────────────────────── -->
   <div class="footer">
-    <p class="footer-line">Dra. Larissa Araújo &nbsp;·&nbsp; Estética Avançada</p>
+    <p class="footer-line">Dra. Larissa Araujo &nbsp;·&nbsp; Estética Avançada</p>
   </div>
 
 </div>
